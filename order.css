@@ -1,0 +1,129 @@
+* input,
+select,
+textarea {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5px;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.total {
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+  text-align: right;
+}
+
+.space {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.gap {
+  gap: 20px;
+}
+
+.equal {
+  flex: 1;
+}
+
+#order-header {
+  margin: 0 100px;
+  padding: 30px 15px;
+  background-image: linear-gradient(to right, #f71735, #f49f0a, #0f0f0f);
+}
+
+#steps-to-order {
+  padding: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 30px 0 0 10px;
+  gap: 15px;
+}
+
+.step {
+  background-color: #fef7eb;
+  padding: 20px;
+}
+.text span {
+  font-weight: bold;
+  font-size: 16;
+}
+.step-number {
+  width: 50px;
+  height: 50px;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form {
+
+  border-style: solid;
+  border-color: #9e9e9e;
+  box-sizing: border-box;
+  width:60%;
+  padding: 50px;
+  border-width: 1px;
+  margin: auto;
+
+}
+
+#my-btn {
+  padding: 5px;
+  background-color: #ffa200;
+  border: transparent;
+  color: white;
+  display: block;
+  margin:50px auto 0;
+  padding: 10px 20px;
+  width: 70%;
+}
+
+/* Responsive design */
+@media (max-width: 1000px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flex {
+    flex-direction: column;
+    gap: 0;
+  }
+}

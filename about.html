@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="about.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        outline: none;
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+        list-style: none;
+      }
+    </style>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="nav-container">
+      <a id="logo" href="home.html">
+        <img src="assets/logo.svg" alt="" width="200px" />
+      </a>
+
+      <div id="navigations">
+        <a href="home.html">Home</a>
+        <a href="about.html">Contact</a>
+        <a href="order.html">
+          <button class="btn">Order Now</button>
+        </a>
+      </div>
+
+      <button id="mobile">
+        <img src="assets/menu.png" class="" />
+      </button>
+
+      <div id="mobile-menu" class="mobile-menu hide-mobile-menu">
+        <a href="home.html">Home</a>
+        <a href="about.html">Contact</a>
+        <a href="order.html">
+          <button class="btn">Order Now</button>
+        </a>
+      </div>
+    </div>
+
+    <div id="header" class="box">
+      <h1 class="heading">CONTACT US</h1>
+    </div>
+
+    <div class="box">
+      <h3 class="sub-heading center">WE'D LOVE TO HEAR FROM YOU</h3>
+
+      <div class="details">
+        <div class="detail">
+          <img src="assets/call-icon.png" alt="call-icon" />
+          <p class="sub-heading">Customer Support Lines</p>
+          <p class="text phone">0712345678 & 01122334455</p>
+        </div>
+
+        <div class="detail">
+          <img src="assets/mail-icon.png" alt="" />
+          <p class="sub-heading">Email</p>
+          <p class="text">order@group5gas.com</p>
+        </div>
+
+        <div class="detail">
+          <img src="assets/location-icon.png" alt="" />
+          <p class="sub-heading">Locate Us</p>
+          <p class="text">01 ABC Street</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3 class="sub-heading center">REACH US DIRECTLY</h3>
+      <div class="style-form">
+        <form>
+          <div class="items">
+            <!-- <label class="text" for="name">Name</label> -->
+            <input id="name" type="text" placeholder="name" required />
+          </div>
+          <div class="items">
+            <!-- <label class="text" for="email">Email</label> -->
+            <input type="email" id="email" name="email" placeholder="email" />
+          </div>
+          <div class="items">
+            <!-- <label class="text" for="message">Message</label> -->
+            <textarea type="text" id="message" placeholder=" Write your message here..." rows="8" required></textarea>
+          </div>
+  
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      
+
+    </div>
+
+    <footer>
+      <p id="copyright">copyright &copy 2024</p>
+      <ul class="socialicons">
+        <li>
+          <a href="#">
+            <img src="assets/facebook.png" class="icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/twitter.png" class="icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/instagram.png" class="icon" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="home.js"></script>
+  </body>
+</html>
